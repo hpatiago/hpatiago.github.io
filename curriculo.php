@@ -1,54 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tiago Abreu - Home</title>
-	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <title>Tiago Abreu - Currículo</title>
+    <link rel="stylesheet" href="CSS/curriculo.css">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Biblioteca para icones dos botões -->
-  <link rel="stylesheet" href="CSS/curriculo.css">
-  </head>
-  <body>
+</head>
+<body>
 
-<div class="profile-picture">
-  <img src="img/profile_pic.jpg" alt="Foto de Perfil">
-</div>
-
-<div class="profile-name">Tiago Abreu</div>
-
-<div class="biography-container">
-    <p class="biography"><i class="fas fa-map-marker-alt"></i> Ilha da Madeira, Portugal <br><br>
-	Aluno de Engenharia Eletrónica e Telecomunicações na Universidade da Madeira
-	</p>
-	
-</div>
-
-
-<div class="social-bar">
-    <a href="https://www.linkedin.com/in/hpatiago/" target="_blank" title="Visite o meu LinkedIn!"><i class="fab fa-linkedin"></i></a>
-   
-</div>
-
-
-
-<div class="button-list">
-    <a href="#curriculo" class="button"><i class="fa fa-file-text"></i>Currículo</a>
-    <a href="#" class="button"><i class="fas fa-user"></i> Sobre</a>
-    <a href="#" class="button"><i class="fas fa-envelope"></i> Contato</a>
-</div>
-
-
-
-<section id="curriculo">
-	
-<section class="timeline">
+    <section class="timeline">
     <h2>Curriculo</h2>
-	<a href="files/digitalgarage_certificate.pdf" download="TiagoHenriquePereiraAbreu.pdf" class="download-button">
-		<i class="fas fa-download"></i> Versão completa
-	</a>
-
-
 
     <section class="timeline">
     <h2>Formação académica</h2>
@@ -57,7 +20,7 @@
         <div class="timeline-date">Universidade da Madeira | 2021 - Atual</div>
 
         <div class="timeline-content">
-            <img src="https://static.docsity.com/media/avatar/universities/15189.png" alt="UMa">
+            <img src="https://scontent.ffnc1-1.fna.fbcdn.net/v/t1.6435-9/179431565_177422310936237_7099002556486045464_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=be3454&_nc_ohc=Sjcam-PCyVcAX-UyTgo&_nc_ht=scontent.ffnc1-1.fna&oh=00_AfDMJVdAALJ0t6w5Y_2ydLGdH1gMe9Orev-NxmQ85uDBBQ&oe=65970E08" alt="UMa">
 
             <div class="text-content">
                 <h2>Licenciatura - Engenharia Eletrónica e Telecomunicações</h2>
@@ -94,7 +57,7 @@
         <div class="timeline-date">Cisco Networking Academy - Setembro de 2023</div>
 
         <div class="timeline-content">
-            <img src="https://cist.fmi.uni-sofia.bg/sites/default/files/cisco_logo_large.png" alt="CISCO">
+            <img src="https://scontent.ffnc1-1.fna.fbcdn.net/v/t39.30808-1/353461709_643348397824707_9212393541022891018_n.png?stp=dst-png_p320x320&_nc_cat=103&ccb=1-7&_nc_sid=596444&_nc_ohc=hoTWpfiBtGUAX9Bqiy3&_nc_ht=scontent.ffnc1-1.fna&oh=00_AfCalsy60bQWmYlNrVAPaoTEdrui3MXTkspcFE1culaUzg&oe=6574D4BA" alt="CISCO">
 
             <div class="text-content">
                 <h2>NDG Linux Unhatched course in the Cisco Networking Academy</h2>
@@ -119,20 +82,5 @@
 
 </section> <!--Fim Section do curriculo -->
 
-</section>
-
-
-
-<div class="footer">
-  <p>&copy; 2023 Tiago Abreu. Todos os direitos reservados.</p>
-</div>
-
-
-<div class="floating-btn" onclick="scrollToTop()">
-        ↑ Inicio
-    </div>
-
-    <script src="script.js"></script>
-	  
-  </body>
+</body>
 </html>
