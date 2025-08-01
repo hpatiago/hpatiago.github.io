@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url('../img/background.jpg') center/cover fixed;
+  /*filter: blur(5px); /* Adiciona o efeito blur à imagem de fundo */
+}
+
+.menu {
+  background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente para melhor leitura do texto */
+  padding: 10px;
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ffcc00; /* Cor ao passar o mouse sobre os links */
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: block;
+    background: rgba(0, 0, 0, 0.8); /* Ajuste para melhorar a leitura em telas menores */
+  }
+
+  .menu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+

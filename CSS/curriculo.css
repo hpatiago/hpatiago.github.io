@@ -49,3 +49,14 @@
 .text-content {
     flex-grow: 1;
 }
+
+.timeline-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.timeline-link:hover {
+  cursor: pointer;
+}
+

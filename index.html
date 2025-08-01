@@ -31,6 +31,10 @@
 
 <div class="social-bar">
     <a href="https://www.linkedin.com/in/hpatiago/" target="_blank" title="Visite o meu LinkedIn!"><i class="fab fa-linkedin"></i></a>
+	
+<a href="https://t.me/hpatiago" target="_blank" title="Envie-me uma mensagem no Telegram!">
+    <i class="fab fa-telegram"></i>
+  </a>
    
 </div>
 
@@ -38,9 +42,27 @@
 
 <div class="button-list">
     <a href="#curriculo" class="button"><i class="fa fa-file-text"></i>Currículo</a>
-    <a href="#" class="button"><i class="fas fa-user"></i> Sobre</a>
+    <a href="#sobre" class="button"><i class="fas fa-user"></i> Sobre</a>
     <a href="#contato" class="button"><i class="fas fa-envelope"></i> Contato</a>
 </div>
+
+<section id="sobre">
+<section class="timeline">
+  <h2>Sobre Mim</h2>
+
+  <div class="timeline-item">
+    <div class="timeline-content" style="align-items: center;">
+      <img src="img/profile_pic.jpg" alt="Foto de Tiago Abreu" style="max-width: 100px; border-radius: 50%; margin-right: 15px;">
+
+      <div class="text-content">
+        <h2>Tiago Abreu</h2>
+		<p>Licenciado em Engenharia Eletrónica e Telecomunicações pela Universidade da Madeira e atualmente a concluir o mestrado na mesma área. Ao longo deste percurso desenvolvi competências nas áreas da eletrónica, telecomunicações, redes e programação, com domínio de ferramentas como MATLAB e ambientes como Linux e Cisco.</p>
+        <p>Procuro continuamente aprender e colaborar em projetos inovadores, com uma abordagem estruturada e orientada à resolução de problemas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -103,6 +125,8 @@
         </div>
     </div>
 	
+	
+<a href="arditi-estagio.html" class="timeline-link">
     <div class="timeline-item">
         <div class="timeline-date">ARDITI - Julho de 2023</div>
 
@@ -115,6 +139,8 @@
             </div>
         </div>
     </div>
+</a>	
+
 </section>
 
 
@@ -155,51 +181,21 @@
 
 <section id="contato">
 <section class="timeline">
-	<h2>Formulário para contato</h2>
-	<form id="formulario" action="https://formsubmit.co/teu-email@email.com" method="POST">
-	  <label for="name">Nome:</label><br>
-	  <input type="text" id="name" name="name" required><br>
-
-	  <label for="email">Email:</label><br>
-	  <input type="email" id="email" name="email" required><br>
-
-	  <label for="message">Mensagem:</label><br>
-	  <textarea id="message" name="message" rows="5" required></textarea><br>
-
-	  <input type="hidden" name="_captcha" value="false">
-
-	  <button type="submit">Enviar</button>
-	</form>
-
-	<p id="mensagem-sucesso">✔️ Mensagem enviada com sucesso!</p>
-
-	<script>
-	  const form = document.getElementById('formulario');
-	  const msg = document.getElementById('mensagem-sucesso');
-
-	  form.addEventListener('submit', function (e) {
-		e.preventDefault(); // Impede o envio tradicional
-
-		const formData = new FormData(form);
-
-		fetch(form.action, {
-		  method: "POST",
-		  body: formData,
-		  headers: {
-			'Accept': 'application/json'
-		  }
-		}).then(response => {
-		  if (response.ok) {
-			form.reset(); // Limpa o formulário
-			msg.style.display = "block"; // Mostra a mensagem
-		  } else {
-			alert("Ocorreu um erro ao enviar. Tenta novamente.");
-		  }
-		}).catch(error => {
-		  alert("Erro de rede. Verifica a tua ligação.");
-		});
-	  });
-	</script>
+<center>
+	<h2>Entre em contacto comigo:</h2>
+	  <p style="font-family: sans-serif; font-size: 30px; color: #555;">
+  
+  <a href="https://www.linkedin.com/in/hpatiago/" target="_blank" style="text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width:30px; height:30px; vertical-align:middle; margin-right:4px; filter: grayscale(100%) brightness(0.4);">
+    LinkedIn - @hpatiago
+  </a>
+  |
+  <a href="https://t.me/hpatiago" target="_blank" style="text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" style="width:30px; height:30px; vertical-align:middle; margin-right:4px; filter: grayscale(100%) brightness(0.4);">
+    Telegram - @hpatiago
+  </a>
+</p>
+</center>
 
 </section>
 
