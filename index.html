@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Biblioteca para icones dos botões -->
   <link rel="stylesheet" href="CSS/curriculo.css">
+  <link rel="stylesheet" href="CSS/form.css">
   </head>
   <body>
 
@@ -19,6 +20,8 @@
 
 <div class="biography-container">
     <p class="biography"><i class="fas fa-map-marker-alt"></i> Ilha da Madeira, Portugal <br><br>
+	Mestrando em Engenharia Eletrotécnica - Telecomunicações<br>
+	Estagiário na empresa Blin Control<br><br>
 	Licenciado em Engenharia Eletrónica e Telecomunicações na Universidade da Madeira <br>
 	Membro Estudante da Ordem dos Engenheiros
 	</p>
@@ -36,7 +39,7 @@
 <div class="button-list">
     <a href="#curriculo" class="button"><i class="fa fa-file-text"></i>Currículo</a>
     <a href="#" class="button"><i class="fas fa-user"></i> Sobre</a>
-    <a href="#" class="button"><i class="fas fa-envelope"></i> Contato</a>
+    <a href="#contato" class="button"><i class="fas fa-envelope"></i> Contato</a>
 </div>
 
 
@@ -54,8 +57,20 @@
     <section class="timeline">
     <h2>Formação académica</h2>
 
+	<div class="timeline-item">
+        <div class="timeline-date">Universidade da Madeira | 2025 - Atual</div>
+
+        <div class="timeline-content">
+            <img src="https://static.docsity.com/media/avatar/universities/15189.png" alt="UMa">
+
+            <div class="text-content">
+                <h2>Mestrado - Engenharia Eletrotécnica - Telecomunicações</h2>
+            </div>
+        </div>
+    </div>
+	
     <div class="timeline-item">
-        <div class="timeline-date">Universidade da Madeira | 2021 - Atual</div>
+        <div class="timeline-date">Universidade da Madeira | 2021 - 2024</div>
 
         <div class="timeline-content">
             <img src="https://static.docsity.com/media/avatar/universities/15189.png" alt="UMa">
@@ -63,16 +78,31 @@
             <div class="text-content">
                 <h2>Licenciatura - Engenharia Eletrónica e Telecomunicações</h2>
                 <p> Desenvolvimento de um projeto para a Semana do Ambiente 2023 da Câmara Municipal do Funchal</p>
-                <p>Competências adquiridas:  Linux · Linguagem Assembly · C (linguagem de programação) · Análise de circuitos · Xilinx ISE · LTspice · C++ · Python · Verilog</p>
+                <p>Competências adquiridas: Matlab · Linux · Linguagem Assembly · C (linguagem de programação) · Análise de circuitos · Xilinx ISE · LTspice · C++ · Python · Verilog</p>
             </div>
         </div>
     </div>
+	
+	
 </section>
 
         
 <section class="timeline">
     <h2>Experiência profissional</h2>
 
+	<div class="timeline-item">
+        <div class="timeline-date">Blin Control - Setembro de 2025 - Atual</div>
+
+        <div class="timeline-content">
+            <img src="https://scontent.ffnc1-1.fna.fbcdn.net/v/t39.30808-1/340836751_594001629443047_3457854303463396190_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=38CjbTl9qWcQ7kNvwFBEeNA&_nc_oc=AdlLTrzPQUkbqSm6AyYExOiJnmgB7WwgI_BgCCg3unw6oLzr-70nj1h6eAHayc2j_M8&_nc_zt=24&_nc_ht=scontent.ffnc1-1.fna&_nc_gid=M_Tte6MG4rUOqAxpxyZmOQ&oh=00_AfQwEx0Q4zKJZ8k0fA7rqZv6L6GXhn6W2WVwfCS0vjG-ZQ&oe=6892D921" alt="BlinControl">
+
+            <div class="text-content">
+                <h2>Blin Control - Estágio</h2>
+                <p>Competências adquiridas: Automação</p>
+            </div>
+        </div>
+    </div>
+	
     <div class="timeline-item">
         <div class="timeline-date">ARDITI - Julho de 2023</div>
 
@@ -123,11 +153,39 @@
 </section>
 
 
+<section id="contato">
+<section class="timeline">
+	<h2>Formulário para contato</h2>
+	<form action="https://formsubmit.co/hpatiago@protonmail.com" method="POST">
+	  <label for="name">Nome:</label><br>
+	  <input type="text" id="name" name="name" required><br><br>
+
+	  <label for="email">Email:</label><br>
+	  <input type="email" id="email" name="email" required><br><br>
+
+	  <label for="message">Mensagem:</label><br>
+	  <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+	  <!-- Anti-spam honeypot -->
+	  <input type="text" name="_honey" style="display:none">
+
+	  <!-- Desativa captcha do Formsubmit (opcional) -->
+	  <input type="hidden" name="_captcha" value="false">
+
+	  <!-- Redireciona após o envio (opcional) -->
+	  <input type="hidden" name="_next" value="https://teusite.github.io/obrigado.html">
+
+	  <button type="submit">Enviar</button>
+	</form>
+
+</section>
+
+
+
 
 <div class="footer">
-  <p>&copy; 2023 Tiago Abreu. Todos os direitos reservados.</p>
+  <p>&copy; 2025 Tiago Abreu. Todos os direitos reservados.</p>
 </div>
-
 
 <div class="floating-btn" onclick="scrollToTop()">
         ↑ Inicio
