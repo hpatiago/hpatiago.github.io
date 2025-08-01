@@ -156,27 +156,50 @@
 <section id="contato">
 <section class="timeline">
 	<h2>Formulário para contato</h2>
-	<form action="https://formsubmit.co/hpatiago@protonmail.com" method="POST">
+	<form id="formulario" action="https://formsubmit.co/teu-email@email.com" method="POST">
 	  <label for="name">Nome:</label><br>
-	  <input type="text" id="name" name="name" required><br><br>
+	  <input type="text" id="name" name="name" required><br>
 
 	  <label for="email">Email:</label><br>
-	  <input type="email" id="email" name="email" required><br><br>
+	  <input type="email" id="email" name="email" required><br>
 
 	  <label for="message">Mensagem:</label><br>
-	  <textarea id="message" name="message" rows="5" required></textarea><br><br>
+	  <textarea id="message" name="message" rows="5" required></textarea><br>
 
-	  <!-- Anti-spam honeypot -->
-	  <input type="text" name="_honey" style="display:none">
-
-	  <!-- Desativa captcha do Formsubmit (opcional) -->
 	  <input type="hidden" name="_captcha" value="false">
-
-	  <!-- Redireciona após o envio (opcional) -->
-	  <input type="hidden" name="_next" value="/#contato">
 
 	  <button type="submit">Enviar</button>
 	</form>
+
+	<p id="mensagem-sucesso">✔️ Mensagem enviada com sucesso!</p>
+
+	<script>
+	  const form = document.getElementById('formulario');
+	  const msg = document.getElementById('mensagem-sucesso');
+
+	  form.addEventListener('submit', function (e) {
+		e.preventDefault(); // Impede o envio tradicional
+
+		const formData = new FormData(form);
+
+		fetch(form.action, {
+		  method: "POST",
+		  body: formData,
+		  headers: {
+			'Accept': 'application/json'
+		  }
+		}).then(response => {
+		  if (response.ok) {
+			form.reset(); // Limpa o formulário
+			msg.style.display = "block"; // Mostra a mensagem
+		  } else {
+			alert("Ocorreu um erro ao enviar. Tenta novamente.");
+		  }
+		}).catch(error => {
+		  alert("Erro de rede. Verifica a tua ligação.");
+		});
+	  });
+	</script>
 
 </section>
 
